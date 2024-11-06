@@ -1,3 +1,5 @@
+This github version is the legacy textual communities system
+
 1. Requirements
 
 The collation editor requires python 2.7+ but does not yet support Python3. I will add support for this as soon as possible and hopefully have a single version of the code that will run in both python versions.
