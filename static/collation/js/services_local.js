@@ -357,7 +357,7 @@ var local_services = {
 	    if (typeof options === "undefined") {
 		options = {};
 	    }
-	    url = 'http://' + SITE_DOMAIN + '/collationserver/' + verse + '/';
+	    url = SITE_DOMAIN + '/collationserver/' + verse + '/';
 	    if (options.hasOwnProperty('accept')) {
 		url += options.accept;
 	    }    
@@ -373,9 +373,9 @@ var local_services = {
 		_id: 'default',
 	},
 	
-	_data_repo : 'http://' + SITE_DOMAIN + '/data/',
+	_data_repo : SITE_DOMAIN + '/data/',
 	
-	_data_store_service_url : 'http://' + SITE_DOMAIN + '/datastore/',
+	_data_store_service_url : SITE_DOMAIN + '/datastore/',
 
 	_get_resource : function (resource_type, result_callback) {
 		var url = local_services._data_repo + resource_type + '?defeat_cache='+new Date().getTime();
@@ -486,7 +486,7 @@ var local_services = {
 
 	get_apparatus_for_context: function (success_callback) {
 		var url;
-		url = 'http://' + SITE_DOMAIN + '/collation/apparatus';
+		url = SITE_DOMAIN + '/collation/apparatus';
 		$.fileDownload(url, {httpMethod: "POST", 
 			data: {
 				settings: JSON.stringify(CL.get_exporter_settings()),

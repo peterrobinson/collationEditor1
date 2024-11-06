@@ -1,1 +1,1 @@
-SITE_DOMAIN = 'localhost:8080';
+SITE_DOMAIN = 'http://localhost:8080';
