@@ -81,6 +81,7 @@ var SV = (function () {
 			footer_html = [];
 			footer_html.push('<input id="expand_collapse_button" type="button" value="expand all"/>');  
 			footer_html.push('<input id="show_hide_subreadings_button" type=button value="show subreadings"/>');
+			footer_html.push('<input type="button" value="Delete all rules..." id="delete_all_rules"/>');
 			footer_html.push('<span id="stage_links"></span>');
 			footer_html.push('<input type="button" id="undo_button" value="undo" style="display:none"/>');
 			footer_html.push('<select id="highlighted" name="highlighted"></select>');
@@ -123,7 +124,8 @@ var SV = (function () {
 				SR._lose_subreadings();
 				CL.save_collation('set');
 			});
-			
+			//added by PR
+			$('#delete_all_rules').on('click',function (event) {RG.delete_all_rules(); });
 			$('#highlighted').on('change', function (event) {SV.highlight_witness(event.target.value);});
 			if (document.getElementById('undo_button')) {
 				$('#undo_button').on('click', function (event) {

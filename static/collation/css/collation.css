@@ -21,7 +21,7 @@ div#message_panel {
 	margin-top: 7px;
 	margin-left: 20px;
 	padding: 3px 3px 3px 3px;
-	
+
 }
 
 div#message_panel.warning {
@@ -35,7 +35,7 @@ span.saved_version {
 
 .tooltip {
 	background-color: #F4F4F4;
-	border: 1px solid #CCC;	
+	border: 1px solid #CCC;
 	width: 400px;
 	padding: 5px;
 	display:none;
@@ -107,7 +107,7 @@ td div.spacer {
  	left:60px;
  	width:300px;
  	padding: 5px;
- 	background-color: white;	
+ 	background-color: white;
 	border: 2px solid blue;
 	border-radius:4px;
 }
@@ -116,14 +116,14 @@ td div.spacer {
 	position:fixed;
  	padding: 5px;
  	top: 23px;
- 	background-color: white;	
+ 	background-color: white;
 	border: 2px solid blue;
 	border-radius:4px;
 }
 
 .label_form {
     position: fixed;
-    background-color: white;    
+    background-color: white;
     border: 2px solid blue;
     border-radius:4px;
 }
@@ -134,10 +134,10 @@ td div.spacer {
 
 .wit_form {
 	position:fixed;
- 	width: 300px; 
- 	top: 23px; 
+ 	width: 300px;
+ 	top: 23px;
  	padding: 5px;
- 	background-color: white;	
+ 	background-color: white;
 	border: 2px solid blue;
 	border-radius:4px;
 }
@@ -155,7 +155,7 @@ td.highlight {
 
 tr.number_row {
 	border-bottom: 1px solid gray;
-}	
+}
 
 div#test {
 	width: 100px;
@@ -248,7 +248,7 @@ td {
 	white-space: nowrap;
 }
 
-td#split_readings {	
+td#split_readings {
 	background: #E9967A;
 	margin-top: 20px;
 	padding: 20px;
@@ -294,12 +294,12 @@ ul.SimpleContextMenu {
 	border-left: 1px solid #000000;
 	border-right: 1px solid #000000;
 }
- 
+
 ul.SimpleContextMenu li {
 	border-bottom: 1px solid #000000;
 }
 
-/*note: if you change width here it needs to be changed in js code for contextmenu in the function _show */ 
+/*note: if you change width here it needs to be changed in js code for contextmenu in the function _show */
 ul.SimpleContextMenu li span {
 	display: block;
 	width: 110px;
@@ -308,7 +308,7 @@ ul.SimpleContextMenu li span {
 	color: #000000;
 	background: #eeeeee;
 }
- 
+
 ul.SimpleContextMenu li span:hover {
 	text-decoration: none;
 	color: #000000;
@@ -353,7 +353,7 @@ div.clone {
 
 td.main_reading, td.overlap_main_reading {
     width: 100%;
-} 
+}
 
 #single_witness_reading {
 	background: white;
@@ -376,6 +376,15 @@ table.variant_unit td {
 
 div.highlighted_unit {
 	border: 2px solid red;
+}
+
+div.regselected {
+  color: green;
+}
+
+img.selectall {
+  position: relative;
+  top: 6px;
 }
 
 div#global_exceptions {
@@ -432,6 +441,3 @@ div#error_message_panel {
 span#error_coll_ex, span#global_exceptions_ex {
 	float: right;
 }
-
-
-
