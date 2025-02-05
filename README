@@ -1,4 +1,12 @@
-This github version is the legacy textual communities system
+This github version is the legacy Textual Communities (TC) system, as created in 2017 and continuing through 2025. Key differences from the original Collation Editor, described in the Readme below, are:
+
+1. The file services_jsondbremote.js. This contains the code linking the collation editor to the Textual Communities MongoDB instance. That is: all the regularizations, segmentations, collation manipulations and output, are stored in the database used by other Textual Communities functions.
+
+2. The files regularize.js and set-variants.js contain some refinements to the regularization and set variants procedures, mainly to facilitate dealing with the large-scale regularizations typical of vernacular traditions.
+
+From February 2025, TC will switch to the new, post 2017, collation editor.
+
+Here follows the original Readme, by Catherine Smith.
 
 1. Requirements
 
